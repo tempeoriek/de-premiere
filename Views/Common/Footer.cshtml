@@ -21,13 +21,13 @@
         
         <ul class="list-unstyled lnk-footer">
           <li style="margin-bottom: 20px;"><a href="#">INFO</a></li>
+          <li><a href="/customer/myaccount">MY ACCOUNT</a></li>
+          <li><a href="/Order/ConfirmPayment">PAYMENT CONFIRMATION</a></li>
            @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
           {
               <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name.ToUpper()</a></li>
           }
-          @* <li><a href="/customer/myaccount">MY ACCOUNT</a></li>
-          <li><a href="/Order/ConfirmPayment">PAYMENT CONFIRMATION</a></li>
-          <li><a href="/Order/ShipmentDetails">SHIPPING INFORMATION</a></li>
+          @* <li><a href="/Order/ShipmentDetails">SHIPPING INFORMATION</a></li>
           <li><a href="@Url.RouteUrl("Topic", new {SeName = Html.GetTopicSeName("returnpolicy") })">RETURN POLICY</a> </li>
           <li><a href="@Url.RouteUrl("Topic", new {SeName = Html.GetTopicSeName("conditionsofuse") })">CONDITION OF USE</a></li>
           <li><a href="@Url.RouteUrl("ContactUs")">CONTACT CUSTOMER CARE</a></li> *@
@@ -55,14 +55,14 @@
       <div class="col-12 col-xs-2 col-sm-2 col-md-2" style="margin-bottom: 10%;">
         <ul class="list-unstyled lnk-footer">
           <li style="margin-bottom: 20px;"><a href="#">SOCIAL</a></li>
-          @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
+          @* @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
           {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name.ToUpper()</a></li>
-          }
-          @* <li><a href="#">INSTAGRAM</a></li>
+          } *@
+          <li><a href="#">INSTAGRAM</a></li>
           <li><a href="#">WHATSAPP</a> </li>
           <li><a href="#">SHOPEE</a></li>
-          <li><a href="#">LAZADA</a> </li> *@
+          <li><a href="#">LAZADA</a> </li>
         </ul>
       </div>
 
@@ -97,16 +97,16 @@
         
         <ul class="list-unstyled lnk-footer">
           <li><a href="#">INFO</a></li>
+          <li><a href="/customer/myaccount">MY ACCOUNT</a></li>
+          <li><a href="/Order/ConfirmPayment">PAYMENT CONFIRMATION</a></li>
            @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
           {
               <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name.ToUpper()</a></li>
           }
-          @* <li><a href="/customer/myaccount">MY ACCOUNT</a></li>
-          <li><a href="/Order/ConfirmPayment">PAYMENT CONFIRMATION</a></li>
-          <li><a href="/Order/ShipmentDetails">SHIPPING INFORMATION</a></li>
-          <li><a href="@Url.RouteUrl("Topic", new {SeName = Html.GetTopicSeName("returnpolicy") })">RETURN POLICY</a> </li>
-          <li><a href="@Url.RouteUrl("Topic", new {SeName = Html.GetTopicSeName("conditionsofuse") })">CONDITION OF USE</a></li>
-          <li><a href="@Url.RouteUrl("ContactUs")">CONTACT CUSTOMER CARE</a></li> *@
+          @* <li><a href="/Order/ShipmentDetails">SHIPPING INFORMATION</a></li> *@
+          @* <li><a href="@Url.RouteUrl("Topic", new {SeName = Html.GetTopicSeName("returnpolicy") })">RETURN POLICY</a> </li> *@
+          @* <li><a href="@Url.RouteUrl("Topic", new {SeName = Html.GetTopicSeName("conditionsofuse") })">CONDITION OF USE</a></li> *@
+          @* <li><a href="@Url.RouteUrl("ContactUs")">CONTACT CUSTOMER CARE</a></li> *@
         </ul>
 
       </div>
@@ -131,14 +131,14 @@
       <div class="row" style="margin: 0;">
         <ul class="list-unstyled lnk-footer">
           <li><a href="#">SOCIAL</a></li>
-          @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
+          @* @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
           {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name.ToUpper()</a></li>
-          }
-          @* <li><a href="#">INSTAGRAM</a></li>
+          } *@
+          <li><a href="#">INSTAGRAM</a></li>
           <li><a href="#">WHATSAPP</a> </li>
           <li><a href="#">SHOPEE</a></li>
-          <li><a href="#">LAZADA</a> </li> *@
+          <li><a href="#">LAZADA</a> </li>
         </ul>
       </div>
 

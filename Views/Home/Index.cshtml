@@ -20,8 +20,8 @@ else
 {
     @Html.Action("HeaderLinks", "Common")
 
-    <div id="sidebar-fixed" class="sidebar hidden-xs hidden-sm">
-        <a href="@Url.RouteUrl("HomePage")"><img src="~/Themes/v1/Content/images/logo.png" title="Commonclub" class="img-responsive sav-logo" /></a>
+    <div id="sidebar-fixed" class="sidebar hidden-xs hidden-sm" >
+        <a href="@Url.RouteUrl("HomePage")"><img src="~/Themes/v1/Content/images/logo.png" title="DE PREMIERE NECESSITE" class="img-responsive sav-logo" /></a>
         <div class="sidebar-menu">@Html.Partial("Menu")</div>
     </div>
 
@@ -126,7 +126,7 @@ else
                                     <div class="col-sm-6">
                                         <a href="@img.NavigateTo"><img class="img-responsive" src="@img.PictureUrl" alt="" /></a>
                                         <div class="">
-                                            <a href="@img.NavigateTo"><h3>@img.Title</h3></a>
+                                            <a href="@img.NavigateTo"><h3>@img.Title.ToUpper()</h3></a>
                                         </div>
                                     </div>
                                 }
@@ -146,7 +146,7 @@ else
                                     <div class="col-sm-6">
                                         <a href="@img.NavigateTo"><img class="img-responsive" src="@img.PictureUrl" alt="" /></a>
                                         <div class="">
-                                            <a href="@img.NavigateTo"><h3>@img.Title</h3></a>
+                                            <a href="@img.NavigateTo"><h3>@img.Title.ToUpper()</h3></a>
                                         </div>
                                     </div>
                                 }
@@ -200,7 +200,7 @@ else
     }
 
    <section class="container instagram"><div id="instagram-feed" /></section>
-   <section class="container instagram" style="margin-top:20px;"><a href="//www.instagram.com/shopatvelvet" target="_blank"><h3>Visit Our Instagram</h3></a></section>
+   <section class="container instagram" style="margin-top:20px;"><a href="//www.instagram.com/shopatvelvet" target="_blank"><h3>VISIT OUR INSTAGRAM</h3></a></section>
 
 
                             @Html.Action("Footer", "Common")

@@ -80,7 +80,7 @@ var defCol = "col-sm-4";
                 <span class="badge pull-right">New</span>
             }*@
 
-            <h3><a href="@Url.RouteUrl("Product", new { SeName = Model.SeName})">@Html.DisplayFor(m => m.Name) @Model.ShortDescription</a></h3>
+            <h3 style="text-transform: uppercase;"><a href="@Url.RouteUrl("Product", new { SeName = Model.SeName})">@Html.DisplayFor(m => m.Name) @Model.ShortDescription</a></h3>
 
             @*<span class="kleur">
                 @Model.ShortDescription

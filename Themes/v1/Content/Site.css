@@ -65,7 +65,7 @@ body {
     font-size: 1rem;
     color: #231F20;
     margin: 0;
-    line-height: 20px;
+    line-height: 15px;
     text-rendering: optimizelegibility;
     background-color: #fff;
     letter-spacing: 0.4px;
@@ -221,7 +221,8 @@ input[type="radio"]{
 select option[disabled] { font-style:italic; color:#dbdbdb}
 select.form-control {
     padding: 0 3px;
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAMAAAAY5vW6AAAAPFBMVEX///84ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODgDf9D3AAAAE3RSTlMAAOzxaPXyNakIwUP3vAdZ7scSDvAMEgAAAC9JREFUeF6NxrcBACAIBEDfnBP77ypYWXrVqVc2mjkrD55YTHKUStQ67jHm2uB/OUUCASlNobHqAAAAAElFTkSuQmCC') /*images/caret.png*/ right center no-repeat;
+    /* background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAICAMAAAAY5vW6AAAAPFBMVEX///84ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODg4ODgDf9D3AAAAE3RSTlMAAOzxaPXyNakIwUP3vAdZ7scSDvAMEgAAAC9JREFUeF6NxrcBACAIBEDfnBP77ypYWXrVqVc2mjkrD55YTHKUStQ67jHm2uB/OUUCASlNobHqAAAAAElFTkSuQmCC') images/caret.png right center no-repeat; */
+    background: url('./images/caret.svg') /*images/caret.png*/ right center no-repeat;
     -moz-appearance: none; /* Firefox */
     -webkit-appearance: none; /* Safari and Chrome */
     font-size: 1rem;
@@ -358,7 +359,7 @@ footer ul.lnk-footer{
 
 }
 footer ul.lnk-footer > li{
-     line-height:24px;
+     line-height:15px;
      font-size:1rem;
 }
 
@@ -688,7 +689,7 @@ li.tab-menu  > a:active { text-decoration:none; color:#383838; border-bottom:1px
     box-sizing: content-box;
     overflow: hidden;
     padding: 0 5px 0;
-    right: -5px;
+    right: 0;
     position: absolute;
     z-index: 4;
     width:325px;
@@ -802,7 +803,7 @@ a.list-group-item {
     padding: 0 0;
     position: relative;
     font-style:normal;
-    line-height:24px;
+    line-height:15px;
     letter-spacing:0.4px;
 }
 
@@ -820,7 +821,7 @@ li.list-group-item > a{
 
 
 
-.sub-cat{margin: 23px 0 23px 28px;}
+.sub-cat{margin: 8px 0 8px 17px;}
 
 .sub-cat .list-group-item{
     padding: 0 0 0 10px; 
@@ -1149,7 +1150,7 @@ li.list-group-item > a{
 
     }
 }
-.prod-details h1{margin-bottom:5px; margin-top:40px; font-family: 'SuisseIntl-Bold';}
+.prod-details h1{margin-bottom:5px; margin-top:40px; font-family: 'sav'; font-weight: bold;}
 
 .prod-details .prices{padding-top:4px;}
 

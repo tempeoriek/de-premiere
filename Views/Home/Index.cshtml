@@ -169,7 +169,7 @@ else
 
                                     @foreach (var img in item.DesktopItems)
                                     {
-                                        <div class="" style="max-width:880px; margin-left:auto;margin-right:auto;">
+                                        <div class="" style="max-width:600px;margin-top: 20px; margin-left:auto;margin-right:auto;">
                                             <a href="@img.NavigateTo" class="clean"><img class="img-responsive center-block" src="@img.PictureUrl" /></a>
                                             <div class="" style="padding-top:10px;">@Html.Raw(img.Title)</div>
                                         </div>
@@ -184,7 +184,7 @@ else
                                 foreach (var img in item.MobileItems)
                                 {
                                     <div class="col-xs-12 hidden-md hidden-lg hidden-xl">
-                                        <div class="" style="max-width:880px; margin-left:auto;margin-right:auto;">
+                                        <div class="" style="max-width:600px;margin-top: 20px; margin-left:auto;margin-right:auto;">
                                             <a href="@img.NavigateTo" class="clean"><img class="img-responsive center-block" src="@img.PictureUrl" /></a>
                                             <div class="" style="padding-top:10px;">@Html.Raw(img.Title)</div>
                                         </div>
@@ -199,8 +199,8 @@ else
         }
     }
 
-   <section class="container instagram"><div id="instagram-feed" /></section>
-   <section class="container instagram" style="margin-top:20px;"><a href="//www.instagram.com/shopatvelvet" target="_blank"><h3>VISIT OUR INSTAGRAM</h3></a></section>
+   @* <section class="container instagram"><div id="instagram-feed" /></section> *@
+   @* <section class="container instagram" style="margin-top:20px;"><a href="//www.instagram.com/shopatvelvet" target="_blank"><h3>VISIT OUR INSTAGRAM</h3></a></section> *@
 
 
                             @Html.Action("Footer", "Common")

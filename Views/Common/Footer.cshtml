@@ -20,7 +20,7 @@
       <div class="col-12 col-xs-2 col-sm-2 col-md-2">
         
         <ul class="list-unstyled lnk-footer">
-          <li style="margin-bottom: 20px;"><a href="#">INFO</a></li>
+          <li style="margin-bottom: 15px;"><a href="#">INFO</a></li>
           <li><a href="/customer/myaccount">MY ACCOUNT</a></li>
           <li><a href="/Order/ConfirmPayment">PAYMENT CONFIRMATION</a></li>
            @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn1).ToList())
@@ -38,7 +38,7 @@
       <div class="col-12 col-xs-2 col-sm-2 col-md-2">
 
         <ul class="list-unstyled lnk-footer">
-          <li style="margin-bottom: 20px;"><a href="#">CONTACT US</a></li>
+          <li style="margin-bottom: 15px;"><a href="#">CONTACT US</a></li>
           @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn2).ToList())
           {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name.ToUpper()</a></li>
@@ -54,7 +54,7 @@
      
       <div class="col-12 col-xs-2 col-sm-2 col-md-2" style="margin-bottom: 10%;">
         <ul class="list-unstyled lnk-footer">
-          <li style="margin-bottom: 20px;"><a href="#">SOCIAL</a></li>
+          <li style="margin-bottom: 15px;"><a href="#">SOCIAL</a></li>
           @* @foreach (var topic in Model.Topics.Where(x => x.IncludeInFooterColumn3).ToList())
           {
             <li><a href="@Url.RouteUrl("Topic", new { SeName = topic.SeName })">@topic.Name.ToUpper()</a></li>

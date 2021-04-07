@@ -27,7 +27,7 @@
                 else
                 {
                     <br/>
-                    <div class="attributes__label">Quantity</div>
+                    <div class="attributes__label" style="text-transform: uppercase;">Quantity</div>
                     <div class="select-quantity">
                         <div class="d-flex">
                             <input id="sub" type='button' value='-' class='sub quantity-btn qtyminus' field='EnteredQuantity' />
@@ -73,7 +73,7 @@
                         addToCartText = Model.AvailableForPreOrder ? T("ShoppingCart.PreOrder").Text : T("ShoppingCart.AddToCart").Text;
                     }
                    
-                        <button type="button" id="add-to-cart-button-@Model.ProductId"  class="btn btn-default  btn-add2cart" data-productid="@Model.ProductId"
+                        <button type="button" id="add-to-cart-button-@Model.ProductId"  class="btn btn-default  btn-add2cart" data-productid="@Model.ProductId" style="text-transform: uppercase;"
                                 onclick="AjaxCart.addproducttocart_details('@Url.RouteUrl("AddProductToCart-Details", new { productId = Model.ProductId, shoppingCartTypeId = (int)ShoppingCartType.ShoppingCart })', '#product-details-form');return false;">@addToCartText</button>
                 }
             
